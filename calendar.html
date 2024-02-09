@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calendar.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="profile.html">
+                <img style="border-radius: 50%" src="images/profile.png" width="30" height="30" />
+                <p>Profile</p>
+            </a>
+            <a href="dashboard.html"><img src="images/home.png" width="30" height="30" />
+                <p>Home</p>
+            </a>
+            <a href="calendar.html" class="active"><img src="images/calendar.png" width="30" height="30" />
+                <p>Calendar</p>
+            </a>
+            <a href="contacts_curr.html"><img src="images/contacts.png" width="30" height="30" />
+                <p>Contacts</p>
+            </a>
+        </div>
+        <div class="content-container">
+            <div class="page-title">
+                <a href="contacts_curr.html" class="back-link">
+                    <img src="left-arrow-icon.png" alt="<" class="arrow-left">
+                </a>
+                <p>Calendar</p>
+            </div>
+            <div class="line"></div>
+            <div class="calendar">
+            </div>
+            <div class="legend">
+                <div class="legend-left">
+                    <p class="legend-title">Preferences</p>
+                    <div class="legend-item">
+                        <div class="color-box high"></div>
+                        <span class="label">High</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="color-box medium"></div>
+                        <span class="label">Medium</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="color-box low"></div>
+                        <span class="label">Low</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="color-box scheduled-color"></div>
+                        <span class="label">Scheduled Meeting</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="color-box suggested-color"></div>
+                        <span class="label">Suggested Meeting</span>
+                    </div>
+                </div>
+                <div class="legend-right">
+                    <a href="contacts_scheduled.html" class="arrow-button-link"><button class="arrow-button-fat">
+                            <img src="right_chevron_icon.png" alt=">" class="chevron-right">
+                            Scheduled Contacts
+                        </button>
+                    </a>
+                    <a href="contacts_meeting.html" class="arrow-button-link"><button class="arrow-button-fat">
+                            <img src="right_chevron_icon.png" alt=">" class="chevron-right">
+                            Meeting Times
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
