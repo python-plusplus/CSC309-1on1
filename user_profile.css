@@ -1,0 +1,133 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+
+.header .back-link {
+    color: #100f0f;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d1d1d7;
+}
+
+.add-photo-btn {
+    background-color: transparent;
+    border: none;
+    color: #5f5fc4;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.name {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.email {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stats .availability,
+.stats .rating {
+    text-align: center;
+}
+
+.stats .hours,
+.stats .stars {
+    display: block;
+    font-size: 20px;
+    color: #100f0f;
+}
+
+.stats .label {
+    font-size: 14px;
+    color: #666;
+}
+
+.reviews .review-item {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.reviews .label {
+    font-size: 16px;
+    color: #333;
+}
+
+.reviews .stars {
+    font-size: 16px;
+    color: #100f0f;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .email {
+        font-size: 14px;
+    }
+
+    .stats .hours,
+    .stats .stars {
+        font-size: 18px;
+    }
+
+    .reviews .label,
+    .reviews .stars {
+        font-size: 14px;
+    }
+}
