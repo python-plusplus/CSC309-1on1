@@ -1,162 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="dashboard.css" />
     <title>1on1</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <div class="content-container">
         <div class="navbar">
-          <a href="#">
-            <img
-              style="border-radius: 50%"
-              src="images/profile.png"
-              width="30"
-              height="30"
-            />
-            <p>Profile</p>
-          </a>
-          <a href="#" class="active"
-            ><img src="images/home.png" width="30" height="30" />
-            <p>Home</p>
-          </a>
-          <a href="#"
-            ><img src="images/calendar.png" width="30" height="30" />
-            <p>Calendar</p>
-          </a>
-          <a href="#"
-            ><img src="images/contacts.png" width="30" height="30" />
-            <p>Contacts</p>
-          </a>
+            <a href="#">
+                <img style="border-radius: 50%" src="images/profile.png" width="30" height="30" />
+                <p>Profile</p>
+            </a>
+            <a href="#" class="active"><img src="images/home.png" width="30" height="30" />
+                <p>Home</p>
+            </a>
+            <a href="#"><img src="images/calendar.png" width="30" height="30" />
+                <p>Calendar</p>
+            </a>
+            <a href="#"><img src="images/contacts.png" width="30" height="30" />
+                <p>Contacts</p>
+            </a>
         </div>
+        <div class="content-container">
+            <div class="dashboard">
+                <div class="meetings-container">
+                    <h3>Suggested Meeting Times</h3>
+                    <div class="section">
+                        <div class="section-header">
+                            <span>Work</span>
+                            <img src="images/work.png" width="30" height="30" />
+                        </div>
+                        <div class="meeting-card">
+                            <p class="meeting-card-header">
+                                Wed
+                                <br />
+                                12-14
+                            </p>
+                            <p class="meeting-card-header">For you</p>
+                            <p class="meeting-card-header">For everyone</p>
 
-        <div class="dashboard">
-          <div class="meetings-container">
-            <h3>Suggested Meeting Times</h3>
-            <div class="section">
-              <div class="section-header">
-                <span>Work</span>
-                <img src="images/work.png" width="30" height="30" />
-              </div>
-              <div class="meeting-card">
-                <p class="meeting-card-header">
-                  Wed
-                  <br />
-                  12-14
-                </p>
-                <p class="meeting-card-header">For you</p>
-                <p class="meeting-card-header">For everyone</p>
+                            <div class="meeting-card-item"></div>
+                            <div class="meeting-card-item">
+                                <span>12-13</span>
+                                <div class="circle-red"></div>
+                            </div>
+                            <div class="meeting-card-item2">
+                                <div class="meeting-card-item">
+                                    <span>2</span>
+                                    <div class="circle-green"></div>
+                                </div>
+                                <div class="meeting-card-item">
+                                    <span>1</span>
+                                    <div class="circle-red"></div>
+                                </div>
+                            </div>
 
-                <div class="meeting-card-item"></div>
-                <div class="meeting-card-item">
-                  <span>12-13</span>
-                  <div class="circle-red"></div>
-                </div>
-                <div class="meeting-card-item2">
-                  <div class="meeting-card-item">
-                    <span>2</span>
-                    <div class="circle-green"></div>
-                  </div>
-                  <div class="meeting-card-item">
-                    <span>1</span>
-                    <div class="circle-red"></div>
-                  </div>
+                            <div class="meeting-card-item"></div>
+                            <div class="meeting-card-item">
+                                <span>13-14</span>
+                                <div class="circle-yellow"></div>
+                            </div>
+                            <div class="meeting-card-item2">
+                                <div class="meeting-card-item">
+                                    <span>1</span>
+                                    <div class="circle-yellow"></div>
+                                </div>
+                                <div class="meeting-card-item">
+                                    <span>1 DNR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <span>Personal</span>
+                            <img src="images/personal.png" width="30" height="30" />
+                        </div>
+                        <div class="meeting-card">
+                            <p class="meeting-card-header">
+                                Wed
+                                <br />
+                                12-14
+                            </p>
+                            <p class="meeting-card-header">For you</p>
+                            <p class="meeting-card-header">For everyone</p>
+
+                            <div class="meeting-card-item"></div>
+                            <div class="meeting-card-item">
+                                <span>12-13</span>
+                                <div class="circle-red"></div>
+                            </div>
+                            <div class="meeting-card-item2">
+                                <div class="meeting-card-item">
+                                    <span>2</span>
+                                    <div class="circle-green"></div>
+                                </div>
+                                <div class="meeting-card-item">
+                                    <span>1</span>
+                                    <div class="circle-red"></div>
+                                </div>
+                            </div>
+
+                            <div class="meeting-card-item"></div>
+                            <div class="meeting-card-item">
+                                <span>13-14</span>
+                                <div class="circle-yellow"></div>
+                            </div>
+                            <div class="meeting-card-item2">
+                                <div class="meeting-card-item">
+                                    <span>1</span>
+                                    <div class="circle-yellow"></div>
+                                </div>
+                                <div class="meeting-card-item">
+                                    <span>1 DNR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="meeting-card-item"></div>
-                <div class="meeting-card-item">
-                  <span>13-14</span>
-                  <div class="circle-yellow"></div>
+                <div class="contacts-container">
+                    <h3>Non-responsive contacts</h3>
+                    <div class="section">
+                        <div class="section-header">
+                            <span>Work</span>
+                            <img src="images/work.png" width="30" height="30" />
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-item">
+                                <img src="images/profile.png" width="50" height="50" />
+                                <h2>John Doe</h2>
+                            </div>
+                            <button class="remind-button">Remind</button>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <span>Personal</span>
+                            <img src="images/Personal.png" width="30" height="30" />
+                        </div>
+                    </div>
                 </div>
-                <div class="meeting-card-item2">
-                  <div class="meeting-card-item">
-                    <span>1</span>
-                    <div class="circle-yellow"></div>
-                  </div>
-                  <div class="meeting-card-item">
-                    <span>1 DNR</span>
-                  </div>
-                </div>
-              </div>
             </div>
-
-            <div class="section">
-              <div class="section-header">
-                <span>Personal</span>
-                <img src="images/personal.png" width="30" height="30" />
-              </div>
-              <div class="meeting-card">
-                <p class="meeting-card-header">
-                  Wed
-                  <br />
-                  12-14
-                </p>
-                <p class="meeting-card-header">For you</p>
-                <p class="meeting-card-header">For everyone</p>
-
-                <div class="meeting-card-item"></div>
-                <div class="meeting-card-item">
-                  <span>12-13</span>
-                  <div class="circle-red"></div>
-                </div>
-                <div class="meeting-card-item2">
-                  <div class="meeting-card-item">
-                    <span>2</span>
-                    <div class="circle-green"></div>
-                  </div>
-                  <div class="meeting-card-item">
-                    <span>1</span>
-                    <div class="circle-red"></div>
-                  </div>
-                </div>
-
-                <div class="meeting-card-item"></div>
-                <div class="meeting-card-item">
-                  <span>13-14</span>
-                  <div class="circle-yellow"></div>
-                </div>
-                <div class="meeting-card-item2">
-                  <div class="meeting-card-item">
-                    <span>1</span>
-                    <div class="circle-yellow"></div>
-                  </div>
-                  <div class="meeting-card-item">
-                    <span>1 DNR</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="contacts-container">
-            <h3>Non-responsive contacts</h3>
-            <div class="section">
-              <div class="section-header">
-                <span>Work</span>
-                <img src="images/work.png" width="30" height="30" />
-              </div>
-
-              <div class="contact-card">
-                <div class="contact-item">
-                  <img src="images/profile.png" width="50" height="50" />
-                  <h2>John Doe</h2>
-                </div>
-                <button class="remind-button">Remind</button>
-              </div>
-            </div>
-
-            <div class="section">
-              <div class="section-header">
-                <span>Personal</span>
-                <img src="images/Personal.png" width="30" height="30" />
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>
