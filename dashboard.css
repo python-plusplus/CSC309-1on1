@@ -1,3 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -14,10 +21,11 @@
     flex-direction: column;
     align-items: center;
     padding: 5px 10px;
-    text-decoration: none;
     font-size: 18px;
     color: #333;
+    transition: background-color 0.3s ease;
     border-left: 5px solid transparent;
+    text-decoration: none;
 }
 
 .sidebar a:hover {
@@ -29,3 +37,19 @@
     background-color: white;
 }
 
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.meetings-container {
+    border-right: 1px solid #333;
+    padding: 10px;
+}
+
+.contacts-container {
+    padding: 10px;
+}
