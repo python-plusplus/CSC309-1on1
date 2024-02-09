@@ -8,13 +8,13 @@ body {
     align-items: flex-start;
 }
 
-.sidebar {
+.navbar {
     background-color: #fff;
     height: 100vh;
     border-right: 1px solid #ddd;
 }
 
-.sidebar a {
+.navbar a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,23 +22,24 @@ body {
     padding-right: 5px;
     padding-top: 10px;
     font-size: 18px;
+    box-sizing: border-box;
     color: #333;
     transition: background-color 0.3s ease;
     border-left: 5px solid transparent;
     text-decoration: none;
 }
 
-.sidebar a:hover {
+.navbar a:hover {
     background-color: #f0f0f0;
 }
 
-.sidebar a.active {
-    border-left: 5px solid #ccc;
-    background-color: white;
+.navbar a.active {
+    background-color: #ddd;
 }
 
 .dashboard {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding-top: 50px;
     flex: 1;
 }
@@ -46,8 +47,8 @@ body {
 .meetings-container {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 30px;
     flex: 1;
-    border-right: 1px solid #837d7d;
 }
 
 .section {
@@ -119,6 +120,7 @@ body {
 .contacts-container {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 30px;
     flex: 1;
 }
 
@@ -153,4 +155,24 @@ body {
 
 .remind-button:hover {
     background-color: #BA6B6B;
+}
+
+@media only screen and (max-width: 800px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .navbar a {
+        min-width: 80px;
+    }
 }
