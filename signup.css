@@ -1,0 +1,132 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    background-color: #f0f0f5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+.signup-form input {
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: #d1d1d7;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.signup-form button {
+    padding: 15px;
+    background-color: #5f5fc4;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+}
+
+.signup-form button:hover {
+    background-color: #4e4eb8;
+}
+
+.login-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #5f5fc4;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .signup-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+    .signup-container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .signup-form input,
+    .signup-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .login-link {
+        font-size: 12px;
+    }
+}
