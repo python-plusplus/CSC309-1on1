@@ -1,0 +1,151 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 1200px;
+    /* width: 97%; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .back-link {
+    color: #100f0f;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d1d1d7;
+}
+
+.name {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.email {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stats .availability,
+.stats .rating {
+    text-align: center;
+}
+
+.stats .hours,
+.stats .stars {
+    display: block;
+    font-size: 20px;
+    color: #100f0f;
+    margin-left: 50px;
+}
+
+.stats .label {
+    font-size: 14px;
+    color: #666;
+}
+
+.reviews .review-item {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.reviews .label {
+    font-size: 16px;
+    color: #333;
+}
+
+.reviews .stars {
+    font-size: 16px;
+    color: #100f0f;
+    margin-left: 50px;
+}
+
+.contact-action {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-action p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.add-contact-btn {
+    background-color: #b2b2b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .name,
+    .email,
+    .contact-action p {
+        font-size: 14px;
+    }
+
+    .stats .hours,
+    .stats .stars,
+    .reviews .label,
+    .reviews .stars {
+        font-size: 14px;
+    }
+
+    .add-contact-btn {
+        padding: 8px 16px;
+    }
+}
