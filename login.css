@@ -1,0 +1,125 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: #f0f0f5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-form input {
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: #d1d1d7;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.login-form button {
+    padding: 15px;
+    background-color: #5f5fc4;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+}
+
+.login-form button:hover {
+    background-color: #4e4eb8;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #5f5fc4;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.sign-up {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+}
+
+.sign-up a {
+    color: #5f5fc4;
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .login-form input,
+    .login-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .forgot-password, .sign-up {
+        font-size: 12px;
+    }
+}
